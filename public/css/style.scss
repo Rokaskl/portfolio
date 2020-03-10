@@ -332,6 +332,9 @@ section:nth-child(5) {
       height: 150px;
     }
   }
+  section:nth-child(3) {
+    top: 0.5em;
+  }
   nav input {
     visibility: visible;
   }
