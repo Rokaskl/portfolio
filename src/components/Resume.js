@@ -27,33 +27,35 @@ export default function Resume() {
         <FontAwesomeIcon className="icon-medium" icon={faPhp} />
         <FontAwesomeIcon className="icon-medium" icon={faPython} />
       </div>
-      <div className="education">
-        <h2>education</h2>
-        <div>
-          <p className="date">2017 - 2021 (Ongoing) </p>
-          <h3>Kaunas University of Technology</h3>
-          <h4>Bachelor of Computing(Software Systems)</h4>
+      <div className="resume-block">
+        <div className="education">
+          <h2>education</h2>
+          <div>
+            <p className="date">2017 - 2021 (Ongoing) </p>
+            <h3>Kaunas University of Technology</h3>
+            <h4>Bachelor of Computing(Software Systems)</h4>
+          </div>
+          <div>
+            <p className="date">2019</p>
+            <h3>NFQ Academy</h3>
+            <h4>Full-stack Developer courses</h4>
+          </div>
         </div>
-        <div>
-          <p className="date">2019 - 2019 </p>
-          <h3>NFQ Academy</h3>
-          <h4>Full-stack Developer courses</h4>
+        <div className="contacts">
+          <h2>contacts</h2>
+          <div>
+            <h3>Email</h3>
+            <h4>rokasklkl@gmail.com</h4>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <h4>+37069197232</h4>
+          </div>
         </div>
-      </div>
-      <div className="education">
-        <h2>contacts</h2>
-        <div>
-          <h3>Email</h3>
-          <h4>rokasklkl@gmail.com</h4>
+        <div className="work">
+          <h2>work experience</h2>
+          <h3>To be continued...</h3>
         </div>
-        <div>
-          <h3>Phone</h3>
-          <h4>+37069197232</h4>
-        </div>
-      </div>
-      <div className="education">
-        <h2>work experience</h2>
-        <h3>To be continued...</h3>
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ export default function Header() {
         wrapper="h1"
       />
       <a className="icon-down" href="#about">
-        <FontAwesomeIcon icon={faAngleDoubleDown} />
+        <FontAwesomeIcon className="icon-medium" icon={faAngleDoubleDown} />
       </a>
     </section>
   );

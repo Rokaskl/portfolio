@@ -20,17 +20,16 @@ export default function About() {
         <p>
           Designing and Coding have been my passion since the days I started
           working with computers but I found myself into web design/development
-          since 2017. I enjoy creating beautifully designed, intuitive and
-          functional websites.
+          since 2017.
         </p>
-      </div>
-      <div>
         <p>
           Beside coding, I am interested in photography, music production and I
-          also love to travel. Most of people consider me as responsable
-          interesting person with good sense of humor!
+          also love to travel.
         </p>
+
+        <button className="resume">Resume</button>
       </div>
+
       <div className="social-links">
         <a className="icon" href="#about">
           <FontAwesomeIcon className="icon-medium" icon={faGithubSquare} />
