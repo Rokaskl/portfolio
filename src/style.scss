@@ -1,6 +1,6 @@
 $primary-color: hsl(176, 56%, 55%);
-$secondary-color: #ffe66d;
-$tertiary-color: #ff6b6b;
+$secondary-color: #f3ca40;
+$tertiary-color: #f8a23a;
 $background-color: #1a535c;
 $secondary-background-color: #033d44;
 $creamy-color: #f7fff7;
@@ -26,7 +26,7 @@ html {
   scroll-behavior: smooth;
   overflow-anchor: none;
   height: 100vh;
-  scroll-snap-type: y proximity;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -56,13 +56,20 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  .nav-blob {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(21%) saturate(396%)
+      hue-rotate(150deg) brightness(93%) contrast(82%);
+    position: fixed;
+    top: -3em;
+    z-index: -1;
+  }
   ul {
     position: fixed;
     display: flex;
     justify-content: space-around;
     li {
       padding: 2em;
+      padding-top: 1em;
       list-style: none;
       transition: 0.5s;
 
@@ -95,9 +102,13 @@ section:nth-child(even) {
 }
 section:nth-child(2) {
   position: relative;
-  h1 {
+  h2 {
     position: absolute;
     top: 3em;
+    text-align: center;
+    font-size: 2em;
+    color: $creamy-color;
+    text-transform: uppercase;
   }
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +165,6 @@ section:nth-child(2) {
 
 h2 {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
   color: $creamy-color;
   text-transform: uppercase;
@@ -212,12 +222,72 @@ nav input {
   visibility: hidden;
 }
 section:nth-child(3) {
+  padding-top: 1em;
+  height: 470vh;
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  h1 {
-    position: absolute;
-    top: 3em;
+
+  h2 {
+    width: 100vw;
+    margin-top: 3em;
+    text-align: center;
+    font-size: 2em;
+    color: $creamy-color;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+  }
+  h3 {
+    font-size: 2em;
+    color: $secondary-color;
+    margin-bottom: 3em;
+  }
+  p {
+    color: $creamy-color;
+  }
+  .projects {
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+
+    .project {
+      padding-left: 2em;
+      padding-right: 2em;
+
+      margin-bottom: 3em;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100em;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+      #mms-img {
+        max-width: 60%;
+      }
+      #gal-img {
+        max-width: 60%;
+      }
+      #music-img {
+        max-width: 60%;
+      }
+      #pingpong-img {
+        width: 60%;
+      }
+      .project-about {
+        padding-left: 1em;
+        p {
+          font-size: 1.5em;
+          margin-bottom: 2em;
+        }
+        b {
+          color: $tertiary-color;
+        }
+      }
+    }
   }
   .skills {
     display: flex;
@@ -228,21 +298,20 @@ section:nth-child(3) {
     bottom: 1em;
     width: 100%;
   }
-  .resume-block {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 }
-section:nth-child(5) {
+section:nth-child(4) {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  h1 {
+  h2 {
     position: absolute;
     top: 3em;
+    text-align: center;
+    font-size: 2em;
+    color: $creamy-color;
+    text-transform: uppercase;
   }
   form {
     display: flex;
@@ -261,7 +330,7 @@ section:nth-child(5) {
       width: 30em;
       border-radius: 5px;
       line-height: 22px;
-      background-color: lighten($background-color, 50%);
+
       border: 2px solid $creamy-color;
       transition: 0.3s;
       padding: 13px;
@@ -335,7 +404,7 @@ button {
 @media screen and (max-width: 600px) {
   section:nth-child(2) {
     padding-bottom: 3em;
-    h1 {
+    h2 {
       top: 0.5em;
     }
     justify-content: space-around;
@@ -350,8 +419,14 @@ button {
     }
   }
   section:nth-child(3) {
-    h1 {
+    h2 {
       top: 0.5em;
+    }
+    .project {
+      flex-direction: column;
+      img {
+        width: 100vw !important;
+      }
     }
   }
 
@@ -359,6 +434,9 @@ button {
     height: 100%;
     width: 100%;
     z-index: 5;
+  }
+  .nav-blob {
+    visibility: hidden;
   }
   nav ul {
     flex-direction: column;
@@ -599,7 +677,7 @@ section:nth-child(5) {
     }
   }
   section:nth-child(3) {
-    h1 {
+    h2 {
       top: 0.5em;
     }
   }

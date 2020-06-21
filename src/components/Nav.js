@@ -21,6 +21,7 @@ export default function Nav(props) {
       </div>
 
       <ul class={(clicked ? "clicked " : " ") + (opened ? "open" : "close")}>
+        <img src="/assets/nav-blob.svg" className="nav-blob"></img>
         <li className="nav-element">
           <a className="nav-link" onClick={closeNav} href="#header">
             header

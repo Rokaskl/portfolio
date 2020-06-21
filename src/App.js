@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.scss";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Header from "./components/Header";
@@ -13,7 +14,6 @@ function App() {
       <div className="container">
         <Header />
         <About />
-        <Resume />
         <Works />
         <Contact />
       </div>

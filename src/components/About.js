@@ -3,14 +3,14 @@ import {
   faFacebookSquare,
   faGithubSquare,
   faInstagram,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function About() {
   return (
     <section id="about">
-      <h1> About Me</h1>
+      <h2> About Me</h2>
       <img src="/assets/me.jpg" alt="Me" className="responsive-img"></img>
       <div>
         <p>
