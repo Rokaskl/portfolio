@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Header from "./components/Header";
-import Resume from "./components/Resume";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 

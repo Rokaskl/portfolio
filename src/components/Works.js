@@ -20,6 +20,7 @@ export default function Works() {
           type="image/svg+xml"
           data="/assets/c-logo.svg"
           className="icon-medium sharp-icon"
+          aria-label="CSharp Icon"
         />
         <FontAwesomeIcon className="icon-medium" icon={faPhp} />
         <FontAwesomeIcon className="icon-medium" icon={faPython} />
@@ -31,6 +32,7 @@ export default function Works() {
             className="project-img"
             id="commentme-img"
             src="/assets/commentme.png"
+            alt=""
           ></img>
           <div className="project-about">
             <h3 className="project-title">Comment Me</h3>
@@ -42,7 +44,12 @@ export default function Works() {
           </div>
         </div>
         <div className="project">
-          <img className="project-img" id="mms-img" src="/assets/mms.PNG"></img>
+          <img
+            className="project-img"
+            id="mms-img"
+            alt=""
+            src="/assets/mms.PNG"
+          ></img>
           <div className="project-about">
             <h3 className="project-title">Membership management system</h3>
             <p className="project-text">
@@ -66,7 +73,12 @@ export default function Works() {
         </div>
         <h2>Other Cool projects</h2>
         <div className="project">
-          <img className="project-img" id="gal-img" src="/assets/gal.PNG"></img>
+          <img
+            className="project-img"
+            id="gal-img"
+            alt=""
+            src="/assets/gal.PNG"
+          ></img>
           <div className="project-about">
             <h3 className="project-title">CSS grid gallery</h3>
             <p className="project-text"></p>
@@ -83,6 +95,7 @@ export default function Works() {
             className="project-img"
             id="music-img"
             src="/assets/music.PNG"
+            alt=""
           ></img>
           <div className="project-about">
             <h3 className="project-title">Online Music Machine</h3>
@@ -99,6 +112,7 @@ export default function Works() {
             className="project-img"
             id="pingpong-img"
             src="/assets/pingpong.PNG"
+            alt=""
           ></img>
           <div className="project-about">
             <h3 className="project-title">Ping Pong Game</h3>
