@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2>Contact Me</h2>
-      <NetlifyForm name="form">
+      <NetlifyForm name="contact">
         {({ loading, error, success }) => (
           <div>
             {loading && <div>Loading...</div>}
@@ -21,9 +21,19 @@ export default function Contact() {
             )}
             {!loading && !success && (
               <div>
-                <input type="text" name="name" required />
-                <input type="text" name="email" required />
-                <textarea name="message" required />
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  name="Email"
+                  required
+                />
+                <textarea placeholder="Your Message" name="Message" required />
                 <button>Submit</button>
               </div>
             )}
