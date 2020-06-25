@@ -521,7 +521,7 @@ button {
     transition: all 0.3s ease;
     top: -7em;
     left: -8em;
-    z-index: 1;
+    z-index: 10;
   }
 
   .hamburger {
@@ -649,7 +649,7 @@ section:nth-child(4) {
     transition: all 0.3s ease;
     top: -7em;
     left: -8em;
-    z-index: 1;
+    z-index: 10;
   }
 
   .hamburger {

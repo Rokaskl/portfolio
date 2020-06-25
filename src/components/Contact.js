@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2>Contact Me</h2>
-      <NetlifyForm name="Contact Form">
+      <NetlifyForm name="form">
         {({ loading, error, success }) => (
           <div>
             {loading && <div>Loading...</div>}
