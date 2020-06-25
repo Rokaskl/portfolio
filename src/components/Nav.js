@@ -17,8 +17,8 @@ export default function Nav(props) {
         className={"hamburger-container " + (opened ? "open" : "close")}
         onClick={toggleOpen}
       >
-        <div class="hamburger"></div>
-        <div class="plus"></div>
+        <div className="hamburger"></div>
+        <div className="plus"></div>
       </div>
       <img src="/assets/nav-blob.svg" alt="" className="nav-blob"></img>
       <ul

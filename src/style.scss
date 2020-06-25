@@ -392,9 +392,12 @@ button {
   filter: invert(94%) sepia(11%) saturate(313%) hue-rotate(69deg)
     brightness(108%) contrast(102%);
 }
-.date {
-  font-weight: 800;
-  color: $primary-color;
+.footer {
+  min-height: 2em;
+  background-color: $secondary-background-color;
+  color: $creamy-color;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 600px) {
