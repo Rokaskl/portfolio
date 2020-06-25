@@ -1,4 +1,6 @@
 import React from "react";
+import pdf from "../files/resume.pdf";
+
 import {
   faFacebookSquare,
   faGithubSquare,
@@ -15,7 +17,7 @@ export default function About() {
       <div className="about-text">
         <p>
           Hi! I am Rokas Kliučinskas, a web designer/developer focused on
-          crafting great web experiences from Kaunas Lithuania.
+          creating great web experiences from Kaunas Lithuania.
         </p>
         <p>
           Designing and Coding have been my passion since the days I started
@@ -27,7 +29,11 @@ export default function About() {
           also love to travel.
         </p>
 
-        <button className="resume">Resume</button>
+        <a href={pdf}>
+          <button href={pdf} className="resume">
+            Resume
+          </button>
+        </a>
       </div>
 
       <div className="social-links">

@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-netlify-form": "^2.1.5",
     "react-particles-js": "^2.7.1",
     "react-scripts": "3.4.0",
     "react-typical": "^0.1.3",

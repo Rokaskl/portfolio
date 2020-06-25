@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import pdf from "../files/resume.pdf";
 
 export default function Nav(props) {
   const [opened, setOpened] = useState(false);
@@ -35,7 +36,7 @@ export default function Nav(props) {
         </li>
 
         <li className="nav-element">
-          <a className="nav-link" onClick={closeNav} href="#resume">
+          <a className="nav-link" href={pdf} onClick={closeNav}>
             resume
           </a>
         </li>
