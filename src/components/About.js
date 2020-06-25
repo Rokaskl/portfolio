@@ -12,7 +12,7 @@ export default function About() {
     <section id="about">
       <h2> About Me</h2>
       <img src="/assets/me.jpg" alt="Me" className="responsive-img"></img>
-      <div>
+      <div className="about-text">
         <p>
           Hi! I am Rokas Kliučinskas, a web designer/developer focused on
           crafting great web experiences from Kaunas Lithuania.
@@ -31,16 +31,19 @@ export default function About() {
       </div>
 
       <div className="social-links">
-        <a className="icon" href="#about">
+        <a className="icon" href="https://github.com/Rokaskl">
           <FontAwesomeIcon className="icon-medium" icon={faGithubSquare} />
         </a>
-        <a className="icon" href="#about">
+        <a
+          className="icon"
+          href="https://www.linkedin.com/in/rokas-kliu%C4%8Dinskas-77ab63101/"
+        >
           <FontAwesomeIcon className="icon-medium" icon={faLinkedin} />
         </a>
-        <a className="icon" href="#about">
+        <a className="icon" href="https://www.instagram.com/kliucis/">
           <FontAwesomeIcon className="icon-medium" icon={faInstagram} />
         </a>
-        <a className="icon" href="#about">
+        <a className="icon" href="https://www.facebook.com/rokas.kliucinskas">
           <FontAwesomeIcon className="icon-medium" icon={faFacebookSquare} />
         </a>
       </div>

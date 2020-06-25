@@ -81,7 +81,6 @@ export default function Works() {
           ></img>
           <div className="project-about">
             <h3 className="project-title">CSS grid gallery</h3>
-            <p className="project-text"></p>
             <p className="project-text">
               Small project to learn CSS Grid usage. Made with vanilla
               <b> JS</b>, <b>HTML</b> and <b>CSS</b>. Also{" "}
@@ -99,7 +98,6 @@ export default function Works() {
           ></img>
           <div className="project-about">
             <h3 className="project-title">Online Music Machine</h3>
-            <p className="project-text"></p>
             <p className="project-text">
               Also cool small project. Made with vanilla
               <b> JS</b>, <b>HTML</b> and <b>CSS</b>. By marking squeres on
@@ -116,7 +114,6 @@ export default function Works() {
           ></img>
           <div className="project-about">
             <h3 className="project-title">Ping Pong Game</h3>
-            <p className="project-text"></p>
             <p className="project-text">
               Fully working <b>2</b> players game. Made with vanilla
               <b> JS</b>, <b>HTML</b> and <b>CSS</b>.

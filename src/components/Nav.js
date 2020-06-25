@@ -11,17 +11,18 @@ export default function Nav(props) {
     setOpened(false);
   };
   return (
-    <nav>
+    <nav className={"" + (opened ? "open" : "close")}>
       <div
-        class={"hamburger-container " + (opened ? "open" : "close")}
+        className={"hamburger-container " + (opened ? "open" : "close")}
         onClick={toggleOpen}
       >
         <div class="hamburger"></div>
         <div class="plus"></div>
       </div>
-
-      <ul class={(clicked ? "clicked " : " ") + (opened ? "open" : "close")}>
-        <img src="/assets/nav-blob.svg" alt="" className="nav-blob"></img>
+      <img src="/assets/nav-blob.svg" alt="" className="nav-blob"></img>
+      <ul
+        className={(clicked ? "clicked " : " ") + (opened ? "open" : "close")}
+      >
         <li className="nav-element">
           <a className="nav-link" onClick={closeNav} href="#header">
             header

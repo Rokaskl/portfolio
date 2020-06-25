@@ -49,7 +49,7 @@ a {
 }
 
 nav {
-  z-index: 1;
+  z-index: 6;
   position: fixed;
   height: 5em;
   width: 100vw;
@@ -124,26 +124,24 @@ section:nth-child(2) {
     width: 400px;
     height: 400px;
   }
-
-  div {
-    width: 300px;
-    button {
-      margin-top: 2em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  button {
+    margin-top: 2em;
   }
-  div p {
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+  div {
+    width: 350px;
+  }
+  .about-text {
+    p {
+      margin-top: 1em;
+      margin-left: 1em;
+      margin-right: 1em;
 
-    line-height: 26px;
-    display: block;
-    color: $creamy-color;
-    word-wrap: break-word;
-    align-self: center;
+      line-height: 26px;
+      display: block;
+      color: $creamy-color;
+      word-wrap: break-word;
+      align-self: center;
+    }
   }
 }
 
@@ -175,6 +173,8 @@ h1 {
   color: $creamy-color;
 }
 .social-links {
+  position: absolute;
+  bottom: 0.5em;
   margin-top: auto;
   display: flex;
   align-content: center;
@@ -197,6 +197,7 @@ h1 {
   justify-content: center;
 }
 .icon-down {
+  z-index: 4;
   background-color: rgba(darken($background-color, 5), 0.75);
   width: 4em;
   height: 4em;
@@ -223,8 +224,9 @@ nav input {
 }
 section:nth-child(3) {
   padding-top: 1em;
-  height: 550vh;
+  height: auto;
   position: relative;
+  padding-bottom: 2em;
 
   h2 {
     width: 100vw;
@@ -265,6 +267,9 @@ section:nth-child(3) {
         height: auto;
         object-fit: contain;
       }
+      #commentme-img {
+        max-width: 40%;
+      }
       #mms-img {
         max-width: 60%;
       }
@@ -280,7 +285,7 @@ section:nth-child(3) {
       .project-about {
         padding-left: 1em;
         p {
-          font-size: 1.5em;
+          font-size: 20px;
           margin-bottom: 2em;
         }
         b {
@@ -352,6 +357,7 @@ section:nth-child(4) {
   }
 }
 button {
+  position: relative;
   text-transform: uppercase;
   outline: 0;
   background: $secondary-color;
@@ -363,6 +369,16 @@ button {
   font-weight: 900;
   font-size: 1em;
   border-radius: 20px;
+  z-index: 5 !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    transition-duration: 0.2s;
+
+    background-color: $tertiary-color;
+  }
 }
 .progress {
   background-color: $creamy-color;
@@ -422,10 +438,25 @@ button {
     h2 {
       top: 0.5em;
     }
+
     .project {
+      .project-about {
+        padding-left: 0 !important;
+        h3 {
+          font-size: 25px !important;
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 15px !important;
+          margin-top: 0;
+        }
+      }
       flex-direction: column;
+      width: 100vw;
       img {
-        width: 100vw !important;
+        max-width: 100% !important;
+        width: 99vw !important;
       }
     }
   }
@@ -433,7 +464,7 @@ button {
   nav {
     height: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 2;
   }
   .nav-blob {
     visibility: hidden;
@@ -452,7 +483,9 @@ button {
       }
     }
   }
-
+  nav.open {
+    z-index: 10;
+  }
   nav ul.open {
     visibility: visible;
 
@@ -463,7 +496,7 @@ button {
   }
   nav ul.close.clicked {
     visibility: visible;
-    animation: 0.3s circle-out ease-in;
+    animation: 0.2s circle-out ease-out;
     animation-fill-mode: forwards;
   }
 
@@ -542,7 +575,7 @@ button {
     transform: rotate(-50deg);
   }
 }
-section:nth-child(5) {
+section:nth-child(4) {
   input,
   textarea {
     width: 20em !important;
